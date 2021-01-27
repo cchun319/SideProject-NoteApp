@@ -1,0 +1,22 @@
+//- link(rel='stylesheet', href='../style/style.css', type='text/css' )
+html
+    head
+        title OBK
+        style
+            include ../style/style.css
+
+    body
+        h1 HomePage
+        ul
+            form(method = "get", action = "NoteAdd")
+                button(type = "submit") New Note
+            each note in Notes 
+                .note
+                    .note.title= note.Title
+                    .note.des= note.Description
+                    p= note.Pre
+                    p= note.Next
+                    form(method = "post", action = "/Delete/" + note._id)
+                        button(type = "submit") Delete
+                    form(method = "get", action = "/NoteUpdate/" + note._id)
+                        button(type = "submit") Update

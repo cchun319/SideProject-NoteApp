@@ -1,0 +1,15 @@
+html
+    head
+        title OBK
+    body
+        h1 Update the note
+
+        form(method = "post" action = "/NoteUpdate/" + NOTE._id)
+            
+            input(type="text" name = "title" value = NOTE.Title)
+            input(type="text" name = "description" value = NOTE.Description)
+            form(method = "POST", action = "/NoteUpdate/" + NOTE._id)
+                button(type = "submit") Update
+            form(method = "get", action = "/")
+                button(type = "submit") Cancel
+                

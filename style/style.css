@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: lightblue;
+  }
+
+div.note{
+    /* text-align: center; */
+    margin:0 auto;
+    width: 40%;
+    color: red;
+    /* justify-content: center; */
+    
+}
+
+form{
+    display: inline;
+}
+
+div.note.title{
+    color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.note.des{
+    color:black;
+    font-family: "Times New Roman", Times, serif;
+}
